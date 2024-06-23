@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(-45deg, #1a2a6c, #b21f1f, #fdbb2d); /* Diagonal gradient with dark blue shades */
+    background-size: 400% 400%; /* Increase the gradient size for smoother transition */
+    animation: gradientAnimation 15s ease infinite; /* Animation for gradient movement */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#welcome-message {
+    font-size: 24px;
+    color: black; /* White text color */
+    background-color: transparent; /* Transparent background */
+    padding: 10px; /* Padding around the text */
+    text-align: center; /* Center-align the text */
+    position: relative; /* Position relative for stacking */
+    z-index: 1; /* Ensure above the gradient background */
+    margin-bottom: 20px; /* Space below the welcome message */
+}
+
+.bg-primary {
+    background-color: transparent !important; /* Transparent background */
+    color: white;
+}
+
+.btn-dark {
+    background-color: #343a40; /* Dark gray for buttons */
+    border-color: #343a40;
+    color: white;
+}
+
+.btn-dark:hover {
+    background-color: #1d2124; /* Darker gray on hover */
+    border-color: #1d2124;
+}
+
+.card {
+    background-color: #ffffff; /* White cards */
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+
+.card-header {
+    background-color: #0056b3; /* Updated header color (darker blue) */
+    color: black;
+    border-bottom: none; /* Remove border-bottom */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.form-control {
+    border-color: #ced4da; /* Form input border color */
+}
